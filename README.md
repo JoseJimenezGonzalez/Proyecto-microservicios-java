@@ -65,5 +65,6 @@ El proyecto sigue una arquitectura de microservicios, donde cada servicio es res
 - Principios SOLID: Cada microservicio sigue los principios SOLID para asegurar un diseño limpio y mantenible.
 - Separación de Capas: Cada microservicio está estructurado en capas (Controlador, Servicio, Repositorio) para una clara separación de responsabilidades.
 - Inyección de Dependencias: Utilizamos Spring para gestionar la inyección de dependencias, promoviendo un código desacoplado y fácil de probar.
+
 ##Comunicación entre Microservicios
 - Feign Client: Los microservicios utilizan Feign Client para realizar llamadas a otros servicios de manera sencilla y declarativa. Esto facilita la comunicación y reduce la complejidad del código.
