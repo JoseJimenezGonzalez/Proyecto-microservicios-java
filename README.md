@@ -11,14 +11,42 @@ Este repositorio contiene un conjunto de microservicios desarrollados en Java, d
 El proyecto sigue una arquitectura de microservicios, donde cada servicio es responsable de una funcionalidad específica y se comunica con otros servicios a través de APIs RESTful. Por motivos de conveniencia y simplicidad, todos los microservicios comparten una única base de datos MySQL.
 
 ## Estructura de Microservicios
-- Commons Entity: Contiene las entidades comunes que son compartidas entre los diferentes microservicios.
-- Commons Utils: Contiene utilidades y validaciones comunes que pueden ser utilizadas por los diferentes microservicios.
-- Eureka Server: Actúa como servidor de registro y descubrimiento de servicios, permitiendo que los microservicios se registren y descubran entre sí.
-- Gateway Server: Utiliza Spring Cloud Gateway para manejar todas las solicitudes entrantes, realizar el balanceo de carga y enrutar las solicitudes al microservicio adecuado.
-- Microservicio Cursos: -- Gestiona la información de los cursos. - Realiza operaciones CRUD sobre los cursos. - Utiliza Spring Data JPA para interactuar con la base de datos de cursos.
-- Microservicio Exámenes: - Gestiona la información de los exámenes. - Realiza operaciones CRUD sobre los exámenes. - Utiliza Spring Data JPA para interactuar con la base de datos de exámenes.
-- Microservicio Respuestas: - Gestiona la información de las respuestas de los estudiantes. - Realiza operaciones CRUD sobre las respuestas. - Utiliza Spring Data JPA para interactuar con la base de datos de respuestas.
-- Microservicio Usuarios: - Gestiona la información de los usuarios. - Realiza operaciones CRUD sobre los usuarios. - Utiliza Spring Data JPA para interactuar con la base de datos de usuarios.
+
+1. **Commons Entity**
+    - Contiene las entidades comunes que son compartidas entre los diferentes microservicios.
+
+2. **Commons Utils**
+    - Contiene utilidades y validaciones comunes que pueden ser utilizadas por los diferentes microservicios.
+
+3. **Eureka Server**
+    - Actúa como servidor de registro y descubrimiento de servicios, permitiendo que los microservicios se registren y descubran entre sí.
+
+4. **Gateway Server**
+    - Utiliza Spring Cloud Gateway para manejar todas las solicitudes entrantes, realizar el balanceo de carga y enrutar las solicitudes al microservicio adecuado.
+
+5. **Microservicio Cursos**
+    - Gestiona la información de los cursos.
+    - Realiza operaciones CRUD sobre los cursos.
+    - Utiliza Spring Data JPA para interactuar con la base de datos de cursos.
+        - **Controladores**: Manejan las solicitudes HTTP y las respuestas.
+        - **Servicios**: Contienen la lógica de negocio.
+        - **Repositorios**: Interactúan con la base de datos.
+        - **Modelos**: Representan las entidades y estructuras de datos.
+
+6. **Microservicio Exámenes**
+    - Gestiona la información de los exámenes.
+    - Realiza operaciones CRUD sobre los exámenes.
+    - Utiliza Spring Data JPA para interactuar con la base de datos MySQL.
+
+7. **Microservicio Respuestas**
+    - Gestiona la información de las respuestas de los estudiantes.
+    - Realiza operaciones CRUD sobre las respuestas.
+    - Utiliza Spring Data JPA para interactuar con la base de datos MySQL.
+
+8. **Microservicio Usuarios**
+    - Gestiona la información de los usuarios.
+    - Realiza operaciones CRUD sobre los usuarios.
+    - Utiliza Spring Data JPA para interactuar con la base de datos MySQL.
 ## Principios y Buenas Prácticas
 - Principios SOLID: Cada microservicio sigue los principios SOLID para asegurar un diseño limpio y mantenible.
 - Separación de Capas: Cada microservicio está estructurado en capas (Controlador, Servicio, Repositorio) para una clara separación de responsabilidades.
