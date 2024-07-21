@@ -15,7 +15,7 @@ El proyecto sigue una arquitectura de microservicios, donde cada servicio es res
 - Commons Utils: Contiene utilidades y validaciones comunes que pueden ser utilizadas por los diferentes microservicios.
 - Eureka Server: Actúa como servidor de registro y descubrimiento de servicios, permitiendo que los microservicios se registren y descubran entre sí.
 - Gateway Server: Utiliza Spring Cloud Gateway para manejar todas las solicitudes entrantes, realizar el balanceo de carga y enrutar las solicitudes al microservicio adecuado.
-- Microservicio Cursos: - Gestiona la información de los cursos. - Realiza operaciones CRUD sobre los cursos. - Utiliza Spring Data JPA para interactuar con la base de datos de cursos.
+- Microservicio Cursos: -- Gestiona la información de los cursos. - Realiza operaciones CRUD sobre los cursos. - Utiliza Spring Data JPA para interactuar con la base de datos de cursos.
 - Microservicio Exámenes: - Gestiona la información de los exámenes. - Realiza operaciones CRUD sobre los exámenes. - Utiliza Spring Data JPA para interactuar con la base de datos de exámenes.
 - Microservicio Respuestas: - Gestiona la información de las respuestas de los estudiantes. - Realiza operaciones CRUD sobre las respuestas. - Utiliza Spring Data JPA para interactuar con la base de datos de respuestas.
 - Microservicio Usuarios: - Gestiona la información de los usuarios. - Realiza operaciones CRUD sobre los usuarios. - Utiliza Spring Data JPA para interactuar con la base de datos de usuarios.
